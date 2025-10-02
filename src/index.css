@@ -1,10 +1,13 @@
 :root {
   /* COLORS! */
-  --primary-color: #FFDDA6;
-  --secondary-color: #629677;
-  --accent-color: #535bf2;
-  --accent-color-dark: #646cff;
-  --text-color: #F24139;
+  --primary-color: #201e19;
+  --secondary-color: #351E29;
+  --accent-color: #f28039;
+  --accent-color-dark: #d36f32;
+  --text-color: #FFFFFF;
+  /* --accent-color: #535bf2; */
+  /* --accent-color-dark: #646cff; */
+  /* --text-color: #F24139; */
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -19,6 +22,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@font-face {
+      font-family: 'TekoFont';
+      src: local("Teko-VariableFont_wght"), url("./assets/font/Teko-VariableFont_wght.ttf") format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
 
 /* TODO: Set these colors */
 @media (prefers-color-scheme: light) {
@@ -36,17 +46,16 @@
 
 a {
   font-weight: 500;
-  color: var(--accent-color-dark);
+  color: var(--accent-color);
   text-decoration: inherit;
 }
 a:hover {
-  color: var(--accent-color);
+  color: var(--accent-color-dark);
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
